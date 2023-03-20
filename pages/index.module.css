@@ -1,0 +1,44 @@
+.homeContents {
+  width: 100%;
+  padding: 70px var(--padding-61xl);
+  box-sizing: border-box;
+  align-items: center;
+  gap: 80px;
+  max-width: 1280px;
+}
+.figmapage,
+.footerSection,
+.homeContents {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footerSection {
+  align-self: stretch;
+  align-items: flex-start;
+}
+.figmapage {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+}
+.figmapage:hover {
+  background: linear-gradient(#fff, #fff), #87550a;
+}
+@media screen and (max-width: 960px) {
+  .homeContents {
+    padding-left: var(--padding-11xl);
+    padding-right: var(--padding-11xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .figmapage {
+    width: 100%;
+  }
+  .figmapage:hover {
+    background-color: var(--color-orange);
+  }
+}
